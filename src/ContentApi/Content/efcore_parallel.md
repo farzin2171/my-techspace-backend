@@ -2,8 +2,9 @@
 title: "My First Blog Post"
 slug: "efcore_parallel"
 date: 2025-12-06
-tags: ["dotnet ", "dbcontext"]
+tags: ["dotnet ", "dbcontext","performance","multithread"]
 summary: "DbContext is Not Thread-Safe: Parallelizing EF Core"
+readTimeMinutes: 8
 ---
 
 # DbContext is Not Thread-Safe: Parallelizing EF Core Queries the Right Way

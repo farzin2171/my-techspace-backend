@@ -115,6 +115,7 @@ namespace ContentApi.Services
                 Date = metadata.Date,
                 Tags = metadata.Tags,
                 Summary = metadata.Summary,
+                ReadTimeMinutes = metadata.ReadTimeMinutes,
                 HtmlContent = htmlContent
             };
         }

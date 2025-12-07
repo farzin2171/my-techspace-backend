@@ -9,6 +9,8 @@ public class Post
     public List<string> Tags { get; set; } = new List<string>();
     public string Summary { get; set; } = string.Empty;
 
+    public int ReadTimeMinutes { get; set; }
+
     // The processed content
     public string HtmlContent { get; set; } = string.Empty;
 }

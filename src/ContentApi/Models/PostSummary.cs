@@ -7,4 +7,5 @@ public class PostSummary
     public DateTime Date { get; set; }
     public List<string> Tags { get; set; } = new List<string>();
     public string Summary { get; set; } = string.Empty;
+    public int ReadTimeMinutes { get; set; }
 }

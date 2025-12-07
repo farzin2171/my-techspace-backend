@@ -31,7 +31,9 @@ namespace ContentApi.Controllers
                 Slug = p.Slug,
                 Date = p.Date,
                 Tags = p.Tags,
-                Summary = p.Summary
+                Summary = p.Summary,
+                ReadTimeMinutes = p.ReadTimeMinutes
+
             });
 
             return Ok(summaries);
