@@ -1,15 +1,15 @@
 ---
-title: "My First Blog Post"
+title: "DbContext Is Not Thread-Safe"
 slug: "efcore_parallel"
 date: 2025-12-06
-tags: ["dotnet ", "dbcontext","performance","multithread"]
-summary: "DbContext is Not Thread-Safe: Parallelizing EF Core"
+tags: ["dotnet ", "entityframeworkcore","asynchronousprogramming","highperformance"]
+summary: "DbContext Is Not Thread-Safe: How to Safely Parallelize EF Core Queries"
 readTimeMinutes: 8
 ---
 
 # DbContext is Not Thread-Safe: Parallelizing EF Core Queries the Right Way
 
-We have all built that endpoint.\
+We have all built that endpoint.
 You know the one: the **Executive Dashboard** or the **User Summary**
 screen. It's the endpoint that needs to fetch three or four completely
 unrelated sets of data to paint a complete picture for the user.

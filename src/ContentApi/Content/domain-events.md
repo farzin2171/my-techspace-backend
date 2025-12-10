@@ -2,8 +2,8 @@
 title: "Domain Events"
 slug: "domain_events"
 date: 2025-12-06
-tags: ["dotnet ", "cleanarchitecture"]
-summary: "Building a Custom Domain Events Dispatcher in .NET"
+tags: ["dotnetcore ", "domainDrivenDesign","cleanarchitecture","eventdriven" ,"microservices"]
+summary: "Building Custom Domain Events in .NET to Decouple Your Business Logic"
 readTimeMinutes: 10
 ---
 # Building a Custom Domain Events Dispatcher in .NET

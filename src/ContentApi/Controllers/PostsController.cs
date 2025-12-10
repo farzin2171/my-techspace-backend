@@ -1,5 +1,6 @@
 ﻿using ContentApi.Models;
 using ContentApi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContentApi.Controllers
@@ -59,10 +60,12 @@ namespace ContentApi.Controllers
 
         /// <summary>
         /// Forces the API to clear the cache and reload all content from source.
-        /// NOTE: Secure this endpoint in a production environment!
+        /// Requires authentication.
         /// </summary>
         [HttpPost("refresh")]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<IActionResult> RefreshCache()
         {
             await _markdownService.RefreshContentCacheAsync();
